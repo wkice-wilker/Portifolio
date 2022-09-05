@@ -1,0 +1,60 @@
+.centercolumn {   
+    float:left;
+    width: 40%;
+    margin: 100px 0px 0px 30%;
+  }
+  .cardlogin {
+    background-color: rgba(28, 28, 28, 0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+    padding: 20px;
+    border-radius: 20px;
+    height: 600px;
+    backdrop-filter: blur(5em);
+    z-index: -1;
+  }
+  .footerlogin{
+    padding: 30px;
+    text-align: center;
+    background: #00000095;
+    margin-top: 10%;
+    backdrop-filter: blur(5em);
+    z-index: -1;
+  }
+  input[type=email],input[type=password ], select, textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 15px;
+    resize:horizontal;
+    background-color: #101010ad;
+    color: #ffffff;
+    margin-left: 15%;
+
+  } 
+ 
+  .logo{
+ max-width: 30%;
+ max-height: 40%;
+ position: relative;
+ margin: 5% 0% 10% 33%;
+  }
+
+  h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+    font-family: 'Lucida Sans';
+  }
+  input[type=submit] {
+    background-color: #d84f00;
+    color: white;
+    padding: 12px 35%;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 11%;
+  }
+  
+  input[type=submit]:hover {
+    background-color:#1c1b1b ;
+  }

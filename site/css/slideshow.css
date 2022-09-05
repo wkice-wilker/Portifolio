@@ -1,0 +1,66 @@
+.card-galeria{
+        position: relative;
+        height: 620px;
+        background-color: rgba(52, 52, 52, 0);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+        left: 5%;
+        width: 90%;
+        border-radius: 10px;
+        backdrop-filter: blur(5em);
+        z-index: 0;
+        padding: 30px;
+        margin-bottom: 100px;
+      
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.slidearea{
+    max-width: 700px;
+    margin: 20px auto;
+    display: grid;
+}
+
+.slide-item{
+    position: relative;
+    grid-area: 1/1;
+}
+
+.navigation{
+    grid-area: 1/1;
+    z-index: 1;
+}
+
+.slide-item > *{
+    opacity: 0;
+    position: absolute;
+    top:0px;
+    pointer-events: none;
+
+}
+.slide-item > .active{
+    opacity: 1;
+    position: relative;
+    pointer-events: initial;
+    
+}
+
+.slide-thumb{
+    display: flex;
+
+}
+.slide-thumb > span{
+    flex: 1;
+    display: block;
+    height: 3px;
+    background: white;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+.slide-thumb > span.active{
+    background: blue;
+}
