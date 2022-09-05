@@ -12,7 +12,7 @@ class Slide {
         this.item[index].classList.add('active');
         this.thumbItem.forEach((item) => item.classList.remove('active'));
         this.thumbItem[index].classList.add('active');
-      
+        this.autoSlide();
 
     }
 
@@ -31,6 +31,10 @@ next() {
     } else{
         this.activeSlide(0);
     }
+}
+autoSlide(){
+    clearTimeout(this.timeout);
+    this.timeout = setTimeout(this.next, 5000);
 }
 
 addNavigation(){

@@ -3,6 +3,13 @@
     width: 40%;
     margin: 100px 0px 0px 30%;
   }
+  @media screen and (max-width:800px) {
+    .centercolumn{
+    float:left;
+    width: 90%;
+    margin: 100px 0px 0px 5%;
+    }
+  }
   .cardlogin {
     background-color: rgba(28, 28, 28, 0);
     box-shadow: 0 10px 20px rgba(0, 0, 0, .5);

@@ -75,6 +75,7 @@ h1 {
   margin: 100px 0px 0px 10%;
 }
 
+
 /* Fake image */
 .fakeimg {
   width: 30%;
@@ -98,23 +99,22 @@ h1 {
   float: left;
   border-radius: 10px 0px 0px 10px;
   width: 50%;
-  height: 400px;
+  height: 500px;
   background-color: #d84f00bc;
   margin-right: 0%;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 15%;
 }
 
 .contatoh-right {
 
-  border-radius: 10px;
+  border-radius: 0px 10px 10px 0px;
   width: 50%;
-  height: 400px;
+  height: 500px;
   margin-left: 50%;
   background-image: url(../imagens/wilker_wk1.fw.png);
   background-size: 100%;
-  background-position: right;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 
 p {
@@ -153,10 +153,16 @@ h5 {
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
 
-  .leftcolumn,
+  .leftcolumn{
+    width: 100%;
+    padding: 0;
+    margin: 2px;
+    margin-top: 80px;
+  }
   .rightcolumn {
     width: 100%;
     padding: 0;
+    margin: 2px;
   }
 }
 
