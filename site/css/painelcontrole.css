@@ -4,3 +4,30 @@ h2{
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.348);
     
 }
+input[type="file" i]{
+    width: 100%;
+    height: 40px;
+    background-color: #32323262;
+    border-radius: 5px;
+    border:black;
+    padding: 8px;
+    color: rgba(252, 97, 0, 0.836);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+label[for="imagem"],label[for="subject"]{
+    color: rgba(252, 97, 0, 0.836);
+    font-size:22px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+textarea[id="subject"]{
+    height:250px;
+    color:rgba(252, 97, 0, 0.836);
+    background-color: #32323262;
+    border: 0;
+    font-size: 17px;
+}
+textarea[id="subject"]::placeholder{
+    color:rgba(252, 97, 0, 0.836);
+}
