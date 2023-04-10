@@ -39,11 +39,14 @@ img{
 .slide-item{
     position: relative;
     grid-area: 1/1;
+
 }
 .navigation button{
-    opacity: 0;
+    opacity: 10;
     -webkit-appearance: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0,);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color: rgb(170, 209, 228);
+    border:none;
 }
 
 .navigation{
@@ -98,4 +101,15 @@ img{
     to{
         transform: initial;
     }
+}
+
+.slide-prev{
+    position: relative;
+    margin-right: 75%;
+    width: 0;
+}
+.slide-next{
+    position: relative;
+    margin-left: 75%;
+    width: 0;
 }
