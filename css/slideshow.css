@@ -1,0 +1,115 @@
+.card-galeria{
+        position: relative;
+        height: 620px;
+        background-color: rgba(52, 52, 52, 0);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+        left: 5%;
+        width: 90%;
+        border-radius: 10px;
+        backdrop-filter: blur(5em);
+        z-index: 0;
+        padding: 30px;
+        margin-bottom: 100px;
+      
+}
+.centercolumn {
+    float: left;
+    width: 80%;
+    margin: 100px 0px 0px 10%;
+  }
+@media screen and (max-width:800px) {
+    .centercolumn{
+    float:left;
+    width: 100%;
+    margin: 100px 0px 0px 0px;
+    }
+  }
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.slidearea{
+    max-width: 700px;
+    margin: 20px auto;
+    display: grid;
+}
+
+.slide-item{
+    position: relative;
+    grid-area: 1/1;
+
+}
+.navigation button{
+    opacity: 10;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color: rgb(170, 209, 228);
+    border:none;
+}
+
+.navigation{
+    grid-area: 1/1;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.slide-item > *{
+    opacity: 0;
+    position: absolute;
+    top:0px;
+    pointer-events: none;
+
+}
+.slide-item > .active{
+    opacity: 1;
+    position: relative;
+    pointer-events: initial;
+    
+}
+
+.slide-thumb{
+    display: flex;
+    grid-column: 1/ 3;
+
+}
+.slide-thumb > span{
+    flex: 1;
+    display: block;
+    height: 5px;
+    background: rgba(0, 0, 0, 0.153);
+    margin: 5px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.slide-thumb > span.active::after{
+    background: rgba(255, 89, 0, 0.596);
+    content: '';
+    display: block;
+    height: inherit;
+    transform: translate(-100%);
+    border-radius: 3px;
+    animation: thumb 5s;
+
+}
+
+@keyframes thumb{
+    to{
+        transform: initial;
+    }
+}
+
+.slide-prev{
+    position: relative;
+    margin-right: 75%;
+    width: 0;
+}
+.slide-next{
+    position: relative;
+    margin-left: 75%;
+    width: 0;
+}
